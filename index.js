@@ -1,30 +1,26 @@
-let vitorias = 50
+let vitorias = 10 
 let derrotas = 38
-let saldo = vitorias - derrotas
-console.log ("O Herói tem saldo de " + saldo + " está no nível " + saldoRankeadas)
+let calculo = vitorias - derrotas
+calcularRankeadas(calculo)
+console.log ("O Herói tem saldo de " + calculo + " está no nível " + rank)
 
-function saldoRankeadas (saldo){
-    if(saldo){
-        saldo < 10
-        saldoRankeadas = "Ferro"
-    }else if (saldo){
-        10 < saldo <= 20
-        saldoRankeadas = "Bronze"
-    }else if (saldo){
-        20 < saldo <= 50
-        saldoRankeadas = "Prata"
-    }else if (saldo){
-        50 < saldo <= 80
-        saldoRankeadas = "Ouro"
-    }else if (saldo){
-        80 < saldo <= 90
-        saldoRankeadas = "Diamante"
-    }else if (saldo){
-        90 < saldo <= 100
-        saldoRankeadas = "Lendário"
-    }else if (saldo){
-        saldo > 100
-        saldoRankeadas = "Imortal"
+function calcularRankeadas (saldo){
+    if(saldo < 10){
+        rank = "Ferro"
+    }else if (10 < saldo && saldo <= 20){
+        rank = "Bronze"
+    }else if (20 < saldo && saldo <= 50){
+        rank = "Prata"
+    }else if (50 < saldo && saldo <= 80){
+        rank = "Ouro"
+    }else if (80 < saldo && saldo <= 90){
+        rank = "Diamante"
+    }else if (90 < saldo && saldo <= 100){
+        rank = "Lendário"
+    }else if (saldo > 100){
+        rank = "Imortal"
+    }else {
+        rank = "Ranking não compreendido"
     }
-    return saldoRankeadas
+    return rank
 }
