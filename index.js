@@ -1,4 +1,4 @@
-let vitorias = 10 
+let vitorias = 120
 let derrotas = 38
 let calculo = vitorias - derrotas
 calcularRankeadas(calculo)
