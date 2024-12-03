@@ -1,7 +1,6 @@
 let vitorias = 50
 let derrotas = 38
 let saldo = vitorias - derrotas
-saldoRankeadas()
 console.log ("O Herói tem saldo de " + saldo + " está no nível " + saldoRankeadas)
 
 function saldoRankeadas (saldo){
@@ -26,8 +25,6 @@ function saldoRankeadas (saldo){
     }else if (saldo){
         saldo > 100
         saldoRankeadas = "Imortal"
-    }else {
-        saldoRankeadas = "Ranque não aceito"
     }
     return saldoRankeadas
 }
